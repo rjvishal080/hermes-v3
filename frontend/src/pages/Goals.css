@@ -1,0 +1,53 @@
+.goals-page { max-width: 740px; }
+
+.alerts-bar {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;
+}
+.alert-chip {
+  display: flex; align-items: center; gap: 6px;
+  padding: 5px 12px; border-radius: 20px; font-size: 12px;
+  border: 1px solid;
+}
+.alert-chip.overdue { background: rgba(255,107,107,.1); border-color: rgba(255,107,107,.3); color: var(--red); }
+.alert-chip.urgent  { background: rgba(255,107,107,.07); border-color: rgba(255,107,107,.2); color: var(--red); }
+.alert-chip.soon    { background: rgba(240,168,50,.08); border-color: rgba(240,168,50,.2); color: var(--gold); }
+.alert-days { font-weight: 600; margin-left: 2px; }
+
+.goal-section { margin-bottom: 24px; }
+.section-label { font-size: 10px; font-weight: 700; color: var(--text3); letter-spacing: 1px; margin-bottom: 8px; }
+.goal-list { display: flex; flex-direction: column; gap: 8px; }
+
+.goal-card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 10px; padding: 12px 14px; cursor: pointer;
+  transition: border-color .1s;
+}
+.goal-card:hover { border-color: var(--border2); }
+.goal-card.completed { opacity: .6; }
+
+.goal-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; gap: 8px; }
+.goal-header-left { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.goal-actions { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
+
+.goal-title { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 3px; }
+.goal-desc { font-size: 12px; color: var(--text2); margin-bottom: 8px; }
+
+.progress-wrap { display: flex; align-items: center; gap: 8px; margin-top: 8px; }
+.progress-bar { flex: 1; height: 4px; background: var(--bg3); border-radius: 2px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--accent); border-radius: 2px; transition: width .4s; }
+
+.goal-body { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: 12px; }
+
+.milestones { display: flex; flex-direction: column; gap: 5px; }
+.milestone {
+  display: flex; align-items: center; gap: 8px; padding: 5px 8px;
+  border-radius: 6px; font-size: 12px; cursor: pointer;
+  transition: background .1s; color: var(--text2);
+}
+.milestone:hover:not(.done) { background: var(--bg3); color: var(--text); }
+.milestone.done { color: var(--text3); text-decoration: line-through; cursor: default; }
+.ms-dot { width: 6px; height: 6px; border-radius: 50%; border: 1.5px solid var(--border2); flex-shrink: 0; }
+.milestone.done .ms-dot { background: var(--green); border-color: var(--green); }
+
+.progress-notes { display: flex; flex-direction: column; gap: 5px; }
+.progress-note { display: flex; align-items: baseline; gap: 8px; font-size: 12px; color: var(--text2); padding: 4px 0; }

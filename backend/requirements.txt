@@ -1,0 +1,21 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.0
+python-multipart==0.0.12
+pydantic==2.9.2
+# transformers==4.45.0
+# accelerate==0.34.0
+# bitsandbytes==0.44.0
+# safetensors==0.4.5
+# tokenizers==0.20.0
+huggingface-hub==0.25.0
+# sentencepiece==0.2.0
+FlagEmbedding==1.2.11
+chromadb==0.5.23
+rank_bm25==0.2.2
+pymupdf==1.24.10
+apscheduler==3.10.4
+beautifulsoup4==4.12.3
+requests==2.32.3
+numpy==1.26.4
+psutil==6.0.0
+python-dateutil==2.9.0
